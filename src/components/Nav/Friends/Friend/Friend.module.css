@@ -1,0 +1,19 @@
+.item {
+    padding-top: 10px;
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.avatar {
+    border-radius: 30px;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    padding-left: 10px;
+    padding-top: 4px;
+}
