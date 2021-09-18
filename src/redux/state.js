@@ -6,7 +6,7 @@ let state = {
             { id: 1, message: 'Hi, how are you?', likesNumber: 2 },
             { id: 2, message: 'Its my first post', likesNumber: 4 }
         ],
-        newPostText: 'it-kamasutra.com'
+        newPostText: ''
     },
 
     messagesPage: {
