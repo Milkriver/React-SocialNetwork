@@ -15,4 +15,11 @@ const messagesPageReducer = (state, action) => {
     }
 }
 
+export const sendMessageCreator = () => ({ type: SEND_MESSAGE })
+export const updateNewMessageCreator = (body) => (
+    {
+        type: UPDATE_NEW_MESSAGE_BODY,
+        body: body
+    }) 
+    
 export default messagesPageReducer;
