@@ -22,7 +22,7 @@ const Nav = (props) => {
         </div>
 
         <div>
-            <Friends state={props.state}/>
+            {/* <Friends state={props.state}/> */}
         </div>
     </nav>
 }
