@@ -8,7 +8,7 @@ let store = {
             posts: [
                 { id: 1, message: 'Hi, how are you?', likesNumber: 2 },
                 { id: 2, message: 'Its my first post', likesNumber: 4 },
-                { id: 3, message: 'Great news!', likesNumber: 8 }
+                { id: 3, message: 'Great news!', likesNumber: 8 },
             ],
             newPostText: ''
         },
