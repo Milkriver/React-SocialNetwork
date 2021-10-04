@@ -21,7 +21,7 @@ const App = (props) => {
             render={() => <DialogsContainer store={props.store} />} />
           <Route path='/news' render={() => <News />} />
           <Route path='/music' render={() => <Music />} />
-          <Route path='/settings' render={() => <Settings />} />
+          <Route path='/settings'  render={() => <Settings />} />
 
         </div>
       </div>

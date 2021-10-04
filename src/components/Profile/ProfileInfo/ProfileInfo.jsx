@@ -9,7 +9,7 @@ const ProfileInfo = () => {
       </div>
       <div className={classes.blockAvaDescription}>
         <div><img className={classes.ava} src='https://demotivation.ru/wp-content/uploads/2020/07/unnamed-1.jpg' width='100' heigth='100' /></div>
-        <div className={classes.description}>Ava+description </div>
+        <div className={classes.description}>Моя социальная сеть </div>
 
 
       </div>
