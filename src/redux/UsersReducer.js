@@ -7,6 +7,8 @@ let initialState = {
         { id: 1, followed: false, fullName: 'Dmitry', status: 'I am a boss', location: { city: 'Minsk', country: 'Belarus' } },
         { id: 2, followed: true, fullName: 'Sasha', status: 'I am a boss too', location: { city: 'Moscow', country: 'Russia' } },
         { id: 3, followed: false, fullName: 'Andrew', status: 'I am a boss too', location: { city: 'Kiev', country: 'Ukraine' } },
+        { id: 4, followed: false, fullName: 'Antonie', status: 'Big Deal', location: { city: 'Saint-Petersburg', country: 'Russia' } },
+        { id: 5, followed: true, fullName: 'Sofie', status: 'Happiness', location: { city: 'Vladivostok', country: 'Russia' } },
     ],
 };
 
