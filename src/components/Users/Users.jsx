@@ -4,6 +4,9 @@ import styles from './users.module.css'
 
 let Users = (props) => {
     if (props.users.length === 0) {
+
+        axios.get("");
+
         props.setUsers([
             { id: 1, photoUrl: 'https://yt3.ggpht.com/a/AATXAJwlB86wImVyNi1rj5SAKuoYl8Mj3TUltjXtGA=s900-c-k-c0xffffffff-no-rj-mo', followed: false, fullName: 'Dmitry', status: 'I am a boss', location: { city: 'Minsk', country: 'Belarus' } },
             { id: 2, photoUrl: 'https://yt3.ggpht.com/a/AATXAJwlB86wImVyNi1rj5SAKuoYl8Mj3TUltjXtGA=s900-c-k-c0xffffffff-no-rj-mo', followed: true, fullName: 'Sasha', status: 'I am a boss too', location: { city: 'Moscow', country: 'Russia' } },
