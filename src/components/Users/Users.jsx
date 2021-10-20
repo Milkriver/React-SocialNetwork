@@ -1,6 +1,7 @@
 import * as axios from 'axios';
 import React from 'react';
 import styles from './users.module.css'
+import userPhoto from '../../assets/images/avatar.jpg';
 
 
 let Users = (props) => {
@@ -17,7 +18,7 @@ let Users = (props) => {
             props.users.map(u => <div key={u.id}>
                 <span>
                     <div>
-                        <img src={u.photoUrl} width={60} className={styles.userPhoto} />
+                        <img src={u.photos.small != null ? u.photos.small : userPhoto} width={60} className={styles.userPhoto} />
                     </div>
                     <div>
                         {u.followed
@@ -27,12 +28,12 @@ let Users = (props) => {
                 </span>
                 <span>
                     <span>
-                        <div>{u.fullName}</div>
+                        <div>{u.name}</div>
                         <div>{u.status}</div>
                     </span>
                     <span>
-                        <div>{u.location.country}</div>
-                        <div>{u.location.city}</div>
+                        <div>{"u.location.country"}</div>
+                        <div>{"u.location.city"}</div>
                     </span>
 
                 </span>
