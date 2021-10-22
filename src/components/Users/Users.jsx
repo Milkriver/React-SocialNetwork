@@ -4,13 +4,13 @@ import styles from './users.module.css'
 import userPhoto from '../../assets/images/avatar.jpg';
 
 class Users extends React.Component {
-
-    constructor(props) {
-        super(props)
-            axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+    componentDidMount() {
+        axios.get("https://social-network.samuraijs.com/api/1.0/users")
+            .then(response => {
                 this.props.setUsers(response.data.items)
             });
     }
+
 
     render() {
         return <div>
