@@ -15,8 +15,8 @@ class Users extends React.Component {
     render() {
         return <div>
             {
-                this.props.users.map(u => <div key={u.id}>
-                    <span>
+                this.props.users.map(u => <div key={u.id} className={styles.user}>
+                    <div >
                         <div>
                             <img src={u.photos.small != null ? u.photos.small : userPhoto} width={60} className={styles.userPhoto} />
                         </div>
@@ -25,18 +25,18 @@ class Users extends React.Component {
                                 ? <button onClick={() => { this.props.unfollow(u.id) }}>Unfollow</button>
                                 : <button onClick={() => { this.props.follow(u.id) }}>Follow</button>}
                         </div>
-                    </span>
-                    <span>
-                        <span>
+                    </div>
+                    <div>
+                        <div>
                             <div>{u.name}</div>
                             <div>{u.status}</div>
-                        </span>
-                        <span>
+                        </div>
+                        <div>
                             <div>{"u.location.country"}</div>
                             <div>{"u.location.city"}</div>
-                        </span>
+                        </div>
 
-                    </span>
+                    </div>
                 </div>)
 
             }
