@@ -26,9 +26,9 @@ class Users extends React.Component {
                                 : <button onClick={() => { this.props.follow(u.id) }} className={styles.button}>Follow</button>}
                         </div>
                     </div>
-                    <div>
+                    <div className={styles.info}>
                         <div>
-                            <div>{u.name}</div>
+                            <div className={styles.name}>{u.name}</div>
                             <div>{u.status}</div>
                         </div>
                         <div>

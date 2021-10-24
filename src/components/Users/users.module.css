@@ -10,6 +10,15 @@ display: flex;
 .button{
     width: 70px;
     background-color: aqua;
-    border-radius: 10px;
-   
+    border-radius: 10px; 
+}
+
+.info{
+margin-left: 20px;
+margin-bottom: 40px;
+
+}
+
+.name{
+    font-weight: bold;
 }
