@@ -6,3 +6,10 @@ display: flex;
 .userPhoto {
     width: 60px;
 }
+
+.button{
+    width: 70px;
+    background-color: aqua;
+    border-radius: 10px;
+   
+}
