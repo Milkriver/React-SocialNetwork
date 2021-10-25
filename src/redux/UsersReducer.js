@@ -10,6 +10,9 @@ let initialState = {
         // { id: 4, photoUrl: 'https://yt3.ggpht.com/a/AATXAJwlB86wImVyNi1rj5SAKuoYl8Mj3TUltjXtGA=s900-c-k-c0xffffffff-no-rj-mo', followed: false, fullName: 'Antonie', status: 'Big Deal', location: { city: 'Saint-Petersburg', country: 'Russia' } },
         // { id: 5, photoUrl: 'https://yt3.ggpht.com/a/AATXAJwlB86wImVyNi1rj5SAKuoYl8Mj3TUltjXtGA=s900-c-k-c0xffffffff-no-rj-mo', followed: true, fullName: 'Sofie', status: 'Happiness', location: { city: 'Vladivostok', country: 'Russia' } },
     ],
+    pageSize: 5,
+    totalUserCount: 19,
+    currentPage: 2
 };
 
 const UsersReducer = (state = initialState, action) => {

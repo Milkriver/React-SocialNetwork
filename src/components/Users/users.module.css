@@ -1,3 +1,7 @@
+.selectedPage{
+    font-weight: bold;
+}
+
 .user {
 display: flex;
 
@@ -15,7 +19,7 @@ display: flex;
 
 .info{
 margin-left: 20px;
-margin-bottom: 40px;
+margin-bottom: 70px;
 
 }
 
