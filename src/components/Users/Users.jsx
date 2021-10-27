@@ -1,6 +1,6 @@
 import * as axios from 'axios';
 import React from 'react';
-import styles from './users.module.css'
+import styles from './Users.module.css'
 import userPhoto from '../../assets/images/avatar.jpg';
 
 class Users extends React.Component {
@@ -21,18 +21,16 @@ class Users extends React.Component {
     }
 
     render() {
-
-        let pagesCount = Math.ceil(this.props.totalUserCount / this.props.pageSize);
+        let pagesCount = Math.ceil(this.props.totalUsersCount / this.props.pageSize);
         let pages = [];
         for (let i = 1; i <= pagesCount; i++) {
             pages.push(i);
         }
 
-
-
         return <div>
             <div>
                 {pages.map(p => {
+                    console.log(p)
                     return <span className={this.props.currentPage === p && styles.selectedPage} onClick={(e) => { this.onPageChanged(p) }}>{p}</span>
                 })}
             </div>
