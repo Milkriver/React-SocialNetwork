@@ -40,7 +40,7 @@ class Users extends React.Component {
                 this.props.users.map(u => <div key={u.id} className={styles.user}>
                     <div >
                         <div>
-                            <img src={u.photos.small != null ? u.photos.small : userPhoto} width={60} className={styles.userPhoto} />
+                            <img src={u.photos.small != null ? u.photos.small : userPhoto} width={60} className={styles.userPhoto} alt=""/>
                         </div>
                         <div>
                             {u.followed
