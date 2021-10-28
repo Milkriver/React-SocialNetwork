@@ -15,9 +15,9 @@ class Users extends React.Component {
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`)
-        .then(response => {
-            this.props.setUsers(response.data.items)
-        });
+            .then(response => {
+                this.props.setUsers(response.data.items)
+            });
     }
 
     render() {
@@ -29,16 +29,15 @@ class Users extends React.Component {
 
         return <div>
             <div>
-                {pages.map(p => {
-                    console.log(p)
-                    return <span className={this.props.currentPage === p && styles.selectedPage} onClick={(e) => { this.onPageChanged(p) }}>{p}</span>
+                {pages.map(singlePage => {
+                    return <span className={this.props.currentPage === singlePage ? styles.selectedPage : ''} onClick={(e) => { this.onPageChanged(singlePage) }}>{singlePage}</span>
                 })}
             </div>
             {
                 this.props.users.map(u => <div key={u.id} className={styles.user}>
                     <div >
                         <div>
-                            <img src={u.photos.small != null ? u.photos.small : userPhoto} width={60} className={styles.userPhoto} alt=""/>
+                            <img src={u.photos.small != null ? u.photos.small : userPhoto} width={60} className={styles.userPhoto} alt="" />
                         </div>
                         <div>
                             {u.followed
