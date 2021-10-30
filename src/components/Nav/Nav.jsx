@@ -19,10 +19,6 @@ const Nav = (props) => {
         <div className={classes.item}>
             <NavLink to='/settings' activeClassName={classes.activeLink}>Settings</NavLink>
         </div>
-
-        <div>
-            {/* <Friends state={props.state}/> */}
-        </div>
     </nav>
 }
 
