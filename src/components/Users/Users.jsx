@@ -50,10 +50,10 @@ class Users extends React.Component {
                             <div className={styles.name}>{u.name}</div>
                             <div>{u.status}</div>
                         </div>
-                        {/* <div>
+                        <div>
                             <div>{"u.location.country"}</div>
                             <div>{"u.location.city"}</div>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>)
