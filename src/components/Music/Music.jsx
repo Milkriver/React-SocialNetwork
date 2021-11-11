@@ -10,6 +10,7 @@ const Music = (props) => {
             <div className={classes.playlistElement}>Audio3</div>
             <div className={classes.playlistElement}>Audio4</div>
             <div className={classes.playlistElement}>Audio5</div>
+            <div className={classes.playlistElement}>Audio6</div>
 
         </div>
     )
